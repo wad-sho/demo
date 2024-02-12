@@ -1,0 +1,14 @@
+  // プロジェクトのルートにあるrender.yaml
+
+  services:
+    - type: web
+      name: demo-app
+      env: docker
+      plan: starter
+      healthCheckPath: /
+      envVars:
+        - key: ENV_VAR_NAME # 例: JAVA_OPTS
+          value: value_for_env_var # 例: -Xmx512m
+  ports:
+    - 8080
+    dockerfilePath: ./Dockerfile

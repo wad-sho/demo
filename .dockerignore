@@ -1,0 +1,9 @@
+// プロジェクトのルートにある.dockerignore
+
+.mvn
+mvnw
+mvnw.cmd
+.git
+.gitignore
+target/
+!target/your-app*.jar
